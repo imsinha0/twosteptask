@@ -1,0 +1,67 @@
+[31muser 1/1 |1041379105 |stage 0/None| 2025-02-18 13:34:47,255 - main - INFO - Starting experiment
+[0m[31muser 1/1 |1041379105 |stage 0/None| 2025-02-18 13:34:47,255 - main - INFO - ==============================
+[0m[31muser 1/1 |1041379105 |stage 0/None| 2025-02-18 13:34:47,255 - main - INFO - Began stage 'Instructions'
+[0m[31muser 1/1 |1041379105 |stage 0/None| 2025-02-18 13:34:47,433 - main - INFO - Starting experiment
+[0m[31muser 1/1 |1041379105 |stage 0/None| 2025-02-18 13:34:47,433 - main - INFO - ==============================
+[0m[31muser 1/1 |1041379105 |stage 0/None| 2025-02-18 13:34:47,433 - main - INFO - Began stage 'Instructions'
+[0m[31muser 1/1 |1041379105 |stage 0/None| 2025-02-18 13:34:48,174 - main - INFO - Finished Instructions via button press
+[0m[31muser 1/1 |1041379105 |stage 0/None| 2025-02-18 13:34:48,175 - main - INFO - Finished stage 'Instructions'
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:34:48,176 - main - INFO - ==============================
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:34:48,176 - main - INFO - Began stage 'Environment'
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:34:48,177 - nicewebrl.stages - INFO - ==============================
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:34:48,177 - nicewebrl.stages - INFO - {'desc': 'some description', 'key1': 'value1', 'key2': 'value2'}
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:34:48,286 - nicewebrl.stages - INFO - Getting latest stage state
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:34:48,287 - nicewebrl.stages - INFO - No stage state found, starting new stage
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:34:48,415 - main - INFO - {'message': 'Ping 1515'}
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:34:48,425 - main - INFO - Starting experiment
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:34:48,425 - main - INFO - ==============================
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:34:48,425 - main - INFO - Began stage 'Environment'
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:34:48,425 - nicewebrl.stages - INFO - ==============================
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:34:48,425 - nicewebrl.stages - INFO - {'desc': 'some description', 'key1': 'value1', 'key2': 'value2'}
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:34:48,426 - nicewebrl.stages - INFO - Getting latest stage state
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:34:48,427 - nicewebrl.stages - INFO - Loading stage state from memory
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:34:49,417 - main - INFO - {'message': 'Ping 5440'}
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:34:58,794 - nicewebrl.stages - INFO - handle_key_press key: ArrowRight
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:34:59,067 - nicewebrl.stages - INFO - Environment saved file
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:34:59,069 - nicewebrl.stages - INFO - ∆t: 10.401
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:34:59,069 - nicewebrl.stages - INFO - stage state: {'nsteps': 2, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:34:59,069 - nicewebrl.stages - INFO - env step: 2
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:00,822 - nicewebrl.stages - INFO - handle_key_press key: ArrowRight
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:00,834 - nicewebrl.stages - INFO - Environment saved file
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:00,835 - nicewebrl.stages - INFO - ∆t: 2.029
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:00,835 - nicewebrl.stages - INFO - stage state: {'nsteps': 3, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:00,835 - nicewebrl.stages - INFO - env step: 3
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:12,236 - nicewebrl.stages - INFO - handle_key_press key: ArrowRight
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:12,243 - nicewebrl.stages - INFO - Environment saved file
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:12,243 - nicewebrl.stages - INFO - ∆t: 11.414
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:12,244 - nicewebrl.stages - INFO - stage state: {'nsteps': 4, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:12,244 - nicewebrl.stages - INFO - env step: 4
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:14,390 - nicewebrl.stages - INFO - handle_key_press key: ArrowRight
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:14,401 - nicewebrl.stages - INFO - Environment saved file
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:14,401 - nicewebrl.stages - INFO - ∆t: 2.154
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:14,402 - nicewebrl.stages - INFO - stage state: {'nsteps': 5, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:14,402 - nicewebrl.stages - INFO - env step: 5
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:16,437 - nicewebrl.stages - INFO - handle_key_press key: ArrowLeft
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:16,440 - nicewebrl.stages - INFO - Environment saved file
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:16,441 - nicewebrl.stages - INFO - ∆t: 2.049
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:16,441 - nicewebrl.stages - INFO - stage state: {'nsteps': 6, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:16,442 - nicewebrl.stages - INFO - env step: 6
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:17,540 - main - INFO - {'message': 'Ping 3235'}
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:18,419 - main - INFO - {'message': 'Ping 9821'}
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:19,419 - main - INFO - {'message': 'Ping 5988'}
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:30,793 - nicewebrl.stages - INFO - handle_key_press key: ArrowRight
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:30,799 - nicewebrl.stages - INFO - Environment saved file
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:30,800 - nicewebrl.stages - INFO - ∆t: 14.353
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:30,800 - nicewebrl.stages - INFO - stage state: {'nsteps': 7, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:30,801 - nicewebrl.stages - INFO - env step: 7
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:32,271 - nicewebrl.stages - INFO - handle_key_press key: ArrowRight
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:32,277 - nicewebrl.stages - INFO - Environment saved file
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:32,277 - nicewebrl.stages - INFO - ∆t: 1.48
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:32,277 - nicewebrl.stages - INFO - stage state: {'nsteps': 8, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:32,278 - nicewebrl.stages - INFO - env step: 8
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:48,417 - main - INFO - {'message': 'Ping 9233'}
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:49,419 - main - INFO - {'message': 'Ping 8847'}
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:35:50,415 - main - INFO - {'message': 'Ping 4769'}
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:36:05,723 - nicewebrl.utils - ERROR - 0. Task was cancelled. Cleaning up and retrying...
+[0m[31muser 1/1 |1041379105 |stage 1/None| 2025-02-18 13:36:05,725 - nicewebrl.utils - ERROR - Error: ''
+[0m
