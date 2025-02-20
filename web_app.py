@@ -60,7 +60,6 @@ async def global_handle_key_press(e, container):
     await local_handle_key_press()
 
 
-
 #####################################
 # Setup logger
 #####################################

@@ -46,7 +46,7 @@ class TwoStepTask:
     print(f"step: {step}, choice: {choice}, reward: {reward}, done: {done}")
     return self.get_obs(new_state), new_state, reward, done, {}
 
-  def reset(self, key: chex.PRNGKey, params: EnvParams) -> Tuple[chex.Array, EnvState]:
+  def reset(self, key: chex.PRNGKey) -> Tuple[chex.Array, EnvState]:
     """Reset environment state."""
     state = EnvState(step=0, choice=-1, reward=0.0)
     return self.get_obs(state), state
@@ -78,18 +78,10 @@ def render(state: EnvState):
     canvas = canvas.at[1, 0].set(1.0)
     canvas = canvas.at[1, 2].set(1.0)
 
-    # Use jax.numpy to handle comparisons
     choice_is_minus_one = jnp.equal(state.choice, -1)
     choice_is_zero = jnp.equal(state.choice, 0)
     choice_is_one = jnp.equal(state.choice, 1)
 
-    # Use jax.lax.cond to conditionally update the canvas
-    canvas = jax.lax.cond(
-        choice_is_minus_one,
-        lambda canvas: canvas.at[1, 0].set(1.0).at[1, 2].set(1.0),
-        lambda canvas: canvas,
-        canvas
-    )
     canvas = jax.lax.cond(
         choice_is_zero,
         lambda canvas: canvas.at[1, 0].set(1.0).at[0, 0].set(1.0).at[2, 0].set(1.0),
@@ -103,7 +95,6 @@ def render(state: EnvState):
         canvas
     )
 
-    # Convert JAX array to NumPy explicitly for rendering
     return canvas
 
 

@@ -156,7 +156,7 @@ class DQNAgent:
                 self.epsilon = max(self.epsilon_end, self.epsilon * self.epsilon_decay)
             
             total_rewards.append(episode_reward)
-            if episode % 2 == 0:
+            if episode % 100 == 0:
                 print(f"Episode {episode}, Avg Reward: {np.mean(total_rewards[-100:]):.2f}, "
                       f"Epsilon: {self.epsilon:.3f}")
         

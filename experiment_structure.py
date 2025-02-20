@@ -92,9 +92,7 @@ all_stages.append(instruction_stage)
 # Environment stage
 # ------------------
 
-env_params = jax_env.default_params.replace(
-  max_steps_in_episode=MAX_EPISODE_TIMESTEPS,
-)
+env_params = jax_env.default_params
 
 def make_image_html(src):
   html = f"""
@@ -133,7 +131,7 @@ async def env_stage_display_fn(
 
 def evaluate_success_fn(timestep: TimeStep, params: Optional[struct.PyTreeNode] = None):
   """Episode finishes if person gets 5 achievements"""
-  return timestep.last() #and timestep.reward > 0
+  return timestep.last()# and timestep.reward > 0
 
 environment_stage = EnvStage(
   name="Environment",
