@@ -1,0 +1,26 @@
+[31muser 1/1 |2983402350 |stage 0/None| 2025-03-02 22:41:23,744 - main - INFO - Starting experiment
+[0m[31muser 1/1 |2983402350 |stage 0/None| 2025-03-02 22:41:23,745 - main - INFO - ==============================
+[0m[31muser 1/1 |2983402350 |stage 0/None| 2025-03-02 22:41:23,745 - main - INFO - Began stage 'Instructions'
+[0m[31muser 1/1 |2983402350 |stage 0/None| 2025-03-02 22:41:24,903 - main - INFO - Finished Instructions via button press
+[0m[31muser 1/1 |2983402350 |stage 0/None| 2025-03-02 22:41:24,905 - main - INFO - Finished stage 'Instructions'
+[0m[31muser 1/1 |2983402350 |stage 1/None| 2025-03-02 22:41:24,907 - main - INFO - ==============================
+[0m[31muser 1/1 |2983402350 |stage 1/None| 2025-03-02 22:41:24,908 - main - INFO - Began stage 'Environment'
+[0m[31muser 1/1 |2983402350 |stage 1/None| 2025-03-02 22:41:24,908 - nicewebrl.stages - INFO - ==============================
+[0m[31muser 1/1 |2983402350 |stage 1/None| 2025-03-02 22:41:24,908 - nicewebrl.stages - INFO - {'desc': 'some description', 'key1': 'value1', 'key2': 'value2'}
+[0m[31muser 1/1 |2983402350 |stage 1/None| 2025-03-02 22:41:25,006 - nicewebrl.stages - INFO - Getting latest stage state
+[0m[31muser 1/1 |2983402350 |stage 1/None| 2025-03-02 22:41:25,008 - nicewebrl.stages - INFO - No stage state found, starting new stage
+[0m[31muser 1/1 |2983402350 |stage 1/None| 2025-03-02 22:41:26,179 - nicewebrl.stages - INFO - handle_key_press key: ArrowLeft
+[0m[31muser 1/1 |2983402350 |stage 1/None| 2025-03-02 22:41:26,464 - nicewebrl.stages - INFO - Environment saved file
+[0m[31muser 1/1 |2983402350 |stage 1/None| 2025-03-02 22:41:26,467 - nicewebrl.stages - INFO - ∆t: 1.114
+[0m[31muser 1/1 |2983402350 |stage 1/None| 2025-03-02 22:41:26,467 - nicewebrl.stages - INFO - stage state: {'nsteps': 2, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2983402350 |stage 1/None| 2025-03-02 22:41:26,467 - nicewebrl.stages - INFO - env step: 2
+[0m[31muser 1/1 |2983402350 |stage 1/None| 2025-03-02 22:41:26,760 - nicewebrl.stages - INFO - handle_key_press key: ArrowLeft
+[0m[31muser 1/1 |2983402350 |stage 1/None| 2025-03-02 22:41:26,768 - nicewebrl.stages - INFO - --------------------
+[0m[31muser 1/1 |2983402350 |stage 1/None| 2025-03-02 22:41:26,768 - nicewebrl.stages - INFO - episode over
+[0m[31muser 1/1 |2983402350 |stage 1/None| 2025-03-02 22:41:26,768 - nicewebrl.stages - INFO - --------------------
+[0m[31muser 1/1 |2983402350 |stage 1/None| 2025-03-02 22:41:26,769 - nicewebrl.stages - INFO - stage finished
+[0m[31muser 1/1 |2983402350 |stage 1/None| 2025-03-02 22:41:26,773 - nicewebrl.stages - INFO - Environment saved file
+[0m[31muser 1/1 |2983402350 |stage 1/None| 2025-03-02 22:41:26,773 - nicewebrl.stages - INFO - ∆t: 0.58
+[0m[31muser 1/1 |2983402350 |stage 1/None| 2025-03-02 22:41:26,774 - nicewebrl.stages - INFO - stage state: {'nsteps': 3, 'nepisodes': 1, 'nsuccesses': 1}
+[0m[31muser 1/1 |2983402350 |stage 1/None| 2025-03-02 22:41:26,775 - nicewebrl.stages - INFO - env step: 3
+[0m

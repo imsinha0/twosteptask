@@ -56,7 +56,7 @@ default_params = twostep_env.default_params
 jax_web_env.precompile(dummy_env_params = default_params)
 
 def render_fn(timestep: nicewebrl.TimeStep):
-    return twosteptask.render(timestep.state)
+    return twosteptask.render(timestep.state, default_params)
 
 # JIT compile
 render_fn = jax.jit(render_fn)
