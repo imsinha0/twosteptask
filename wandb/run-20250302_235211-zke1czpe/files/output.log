@@ -1,0 +1,2 @@
+/Users/ishaan/miniconda3/envs/nicewebrl/lib/python3.10/site-packages/flashbax/buffers/trajectory_buffer.py:473: UserWarning: Setting max_size dynamically sets the `max_length_time_axis` to be `max_size`//`add_batch_size = 1000`.This allows one to control exactly how many timesteps are stored in the buffer.Note that this overrides the `max_length_time_axis` argument.
+  warnings.warn(

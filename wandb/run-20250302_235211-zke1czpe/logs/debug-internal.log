@@ -1,0 +1,15 @@
+{"time":"2025-03-02T23:52:12.355635-05:00","level":"INFO","msg":"stream: starting","core version":"0.19.5","symlink path":"/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/wandb/run-20250302_235211-zke1czpe/logs/debug-core.log"}
+{"time":"2025-03-02T23:52:12.668269-05:00","level":"INFO","msg":"created new stream","id":"zke1czpe"}
+{"time":"2025-03-02T23:52:12.668325-05:00","level":"INFO","msg":"stream: started","id":"zke1czpe"}
+{"time":"2025-03-02T23:52:12.668339-05:00","level":"INFO","msg":"handler: started","stream_id":"zke1czpe"}
+{"time":"2025-03-02T23:52:12.668399-05:00","level":"INFO","msg":"sender: started","stream_id":"zke1czpe"}
+{"time":"2025-03-02T23:52:12.66848-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"zke1czpe"}
+{"time":"2025-03-02T23:52:12.92161-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-02T23:52:36.675456-05:00","level":"INFO","msg":"stream: closing","id":"zke1czpe"}
+{"time":"2025-03-02T23:52:36.675495-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-02T23:52:36.676035-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-02T23:52:37.038842-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-02T23:52:37.256572-05:00","level":"INFO","msg":"handler: closed","stream_id":"zke1czpe"}
+{"time":"2025-03-02T23:52:37.25656-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"zke1czpe"}
+{"time":"2025-03-02T23:52:37.256572-05:00","level":"INFO","msg":"sender: closed","stream_id":"zke1czpe"}
+{"time":"2025-03-02T23:52:37.256971-05:00","level":"INFO","msg":"stream: closed","id":"zke1czpe"}
