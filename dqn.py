@@ -186,6 +186,7 @@ def make_train(config):
                     if metrics["timesteps"] % 100 == 0:
                         wandb.log(metrics)
                 jax.debug.callback(callback, metrics)
+                #state number, td error, return, loss, average reward per episode
 
             runner_state = (train_state, buffer_state, env_state, obs, rng)
             return runner_state, metrics

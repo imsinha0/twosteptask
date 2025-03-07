@@ -15,7 +15,7 @@ from nicewebrl import get_logger
 logger = get_logger(__name__)
 
 MAX_STAGE_EPISODES = 1
-MAX_EPISODE_TIMESTEPS = 10000
+MAX_EPISODE_TIMESTEPS = 5000
 MIN_SUCCESS_EPISODES = 1
 VERBOSITY = 1
 

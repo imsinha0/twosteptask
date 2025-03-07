@@ -24,9 +24,9 @@ class EnvParams:
          [0.0, 0.0, 1.0]]
     ])  # Shape: (3, 3, 3) - 3 states, each 3x3
     reward_probs: jnp.ndarray = jnp.array([
-        [0.0, 1.0, 0.0],  # Start state (dummy, no reward)
-        [0.3, 0.4, 0.3],  # Left state
-        [0.6, 0.3, 0.1],  # Right state
+        [0.0, 1.0, 0.0], 
+        [0.3, 0.4, 0.3], 
+        [0.6, 0.3, 0.1],  
     ])  # Shape: (num_states, num_rewards)
     num_states: int = reward_probs.shape[0]
 
@@ -44,7 +44,7 @@ class TwoStepTask(environment.Environment):
 
     @property
     def default_params(self) -> EnvParams:
-        return EnvParams()  # Defaults to Two-Step Task
+        return EnvParams()  
 
     def step(
         self,
@@ -54,13 +54,13 @@ class TwoStepTask(environment.Environment):
         params: EnvParams,
     ) -> Tuple[chex.Array, EnvState, jnp.ndarray, jnp.ndarray, Dict[Any, Any]]:
         step = state.step + 1
-        new_state_idx = (state.state_idx + action) % params.num_states
+        new_state_idx = (state.state_idx + action+1) % params.num_states
         reward_probs = params.reward_probs[new_state_idx]
         reward = jax.random.choice(key, jnp.array([0.0, 1.0, 2.0]), p=reward_probs)
         new_state = EnvState(step=step, state_idx=new_state_idx, reward=reward)
         done = step >= params.max_steps_in_episode
         info = {"discount": jax.lax.select(done, 0.0, 1.0),
-                "returned_episode_returns": reward * (1 - done)}  # Simple logging for metrics
+                "returned_episode_returns": reward * (1 - done)} 
         return self.get_obs(new_state), new_state, reward, done, info
 
     def reset(self, key: chex.PRNGKey, params: EnvParams) -> Tuple[chex.Array, EnvState]:
