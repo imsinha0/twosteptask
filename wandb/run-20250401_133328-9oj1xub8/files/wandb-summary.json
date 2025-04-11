@@ -1,0 +1,1 @@
+{"loss":1.1253743171691895,"q_values_mean":1.9876253604888916,"_runtime":4.799175,"timesteps":50000,"_step":499,"q_values_max":3.2208642959594727,"_timestamp":1.743528813370908e+09,"updates":4000,"_wandb":{"runtime":4},"reward":1.100000023841858}

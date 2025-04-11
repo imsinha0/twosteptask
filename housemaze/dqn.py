@@ -1,10 +1,5 @@
 """
 PureJaxRL version of CleanRL's DQN: https://github.com/vwxyzjn/cleanrl/blob/master/cleanrl/dqn_jax.py
-
-# training
-
-# set breakpoint where error comes up
-python -m ipdb -c continue dqn.py
 """
 import os
 import jax
@@ -16,9 +11,15 @@ import wandb
 import optax
 import flax.linen as nn
 from flax.training.train_state import TrainState
+from gymnax.wrappers.purerl import FlattenObservationWrapper, LogWrapper
+import gymnax
 import flashbax as fbx
+import housemaze
+import utils
+import numpy as np
+from typing import Optional, Tuple
+from flax import struct
 
-import twosteptask
 
 class QNetwork(nn.Module):
     action_dim: int
@@ -46,67 +47,70 @@ class CustomTrainState(TrainState):
     timesteps: int
     n_updates: int
 
-def learn_phase(batch, network, params, target_network_params, gamma, plotDetails= False):
-    """
+image_dict = utils.load_image_dict()
 
-    batch: [B, T, ....]
-    """
-    q_next_target = network.apply(
-        target_network_params, batch.second.obs
-    )  # (batch_size, num_actions)
-    q_next_target = jnp.max(q_next_target, axis=-1)  # (batch_size,)
-    target = (
-        batch.first.reward
-        + (1 - batch.first.done) * gamma * q_next_target
-    )
-    q_vals = network.apply(
-        params, batch.first.obs
-    )  # (batch_size, num_actions)
-    def _loss_fn(params):    
-        chosen_action_qvals = jnp.take_along_axis(
-            q_vals,
-            jnp.expand_dims(batch.first.action, axis=-1),
-            axis=-1,
-        ).squeeze(axis=-1)
-        return jnp.mean((chosen_action_qvals - target) ** 2)
+maze2 = """
+.#.C...##....
+.#..D...####.
+.######......
+......######.
+.#.#..#......
+.#.#.##..#...
+##.#.#>.###.#
+A..#.##..#...
+.B.#.........
+#####.#..####
+......####.#.
+.######E.#.#.
+........F#...
+""".strip()
 
-    loss, grads = jax.value_and_grad(_loss_fn)(params)
+char_to_key = dict(
+A="knife",
+B="fork",
+C="pan",
+D="pot",
+E="bowl",
+F="plates",
+)
 
-    def callback(elements):
-        """Want to plot (1) Q-values (2) reward (3) targets (4) done"""
-        import ipdb; ipdb.set_trace()
-        import matplotlib.pyplot as plt
+@struct.dataclass
+class MapInit:
+  grid: jax.Array
+  agent_pos: jax.Array
+  agent_dir: jax.Array
+  spawn_locs: Optional[jax.Array] = None
 
-        fig, axs = plt.subplots(5, 1)
-        for i in elements:
-            axs[i].plot(elements[i])
-            axs[i].set_title(f"Q-values {i}")
-        plt.show()
-        import ipdb; ipdb.set_trace()
+object_to_index = {key: idx for idx, key in enumerate(image_dict["keys"])}
 
-    jax.tree_map(lambda x:x.shape, batch)
-    import ipdb; ipdb.set_trace()    
+objects = np.array([object_to_index[v] for v in char_to_key.values()])
 
-    elements = jax.tree_map(lambda x: x, batch)
-    
-    jax.lax.cond(
-        plotDetails,
-        lambda: jax.debug.callback(callback, elements, q_vals, ),
-        lambda: None)
-        
-    loss, grads = jax.value_and_grad(_loss_fn)(train_state.params)
-    train_state = train_state.apply_gradients(grads=grads)
-    train_state = train_state.replace(n_updates=train_state.n_updates + 1)
-
-    return loss, grads
+map2_init = utils.from_str(
+maze2, char_to_key=char_to_key, object_to_index=object_to_index
+)
+seed = 6
+rng = jax.random.PRNGKey(seed)
 
 def make_train(config):
 
     config["NUM_UPDATES"] = config["TOTAL_TIMESTEPS"] // config["NUM_ENVS"]
 
 
-    env = twosteptask.TwoStepTask()
-    env_params = env.default_params
+    env_params = housemaze.EnvParams(
+    map_init=MapInit(*map2_init),
+    time_limit=jnp.array(50),
+    objects=jnp.asarray(objects),
+    )
+    task_runner = housemaze.TaskRunner(task_objects=env_params.objects)
+
+    basic_env = housemaze.HouseMaze(
+        task_runner=task_runner,
+        num_categories=len(image_dict["keys"]),
+        )
+    basic_env = utils.AutoResetWrapper(basic_env)
+
+    env = FlattenObservationWrapper(basic_env)
+    env = LogWrapper(env)
 
     vmap_reset = lambda n_envs: lambda rng: jax.vmap(env.reset, in_axes=(0, None))(
         jax.random.split(rng, n_envs), env_params
@@ -136,7 +140,7 @@ def make_train(config):
             can_sample=jax.jit(buffer.can_sample),
         )
         rng = jax.random.PRNGKey(0)  # use a dummy rng here
-        _action = env.action_space().sample(rng)
+        _action = basic_env.action_space().sample(rng)
         _, _env_state = env.reset(rng, env_params)
         _obs, _, _reward, _done, _ = env.step(rng, _env_state, _action, env_params)
         _timestep = TimeStep(obs=_obs, action=_action, reward=_reward, done=_done)
@@ -211,6 +215,36 @@ def make_train(config):
             timestep = TimeStep(obs=last_obs, action=action, reward=reward, done=done)
             buffer_state = buffer.add(buffer_state, timestep)
 
+            # NETWORKS UPDATE
+            def _learn_phase(train_state, rng):
+
+                learn_batch = buffer.sample(buffer_state, rng).experience
+
+                q_next_target = network.apply(
+                    train_state.target_network_params, learn_batch.second.obs
+                )  # (batch_size, num_actions)
+                q_next_target = jnp.max(q_next_target, axis=-1)  # (batch_size,)
+                target = (
+                    learn_batch.first.reward
+                    + (1 - learn_batch.first.done) * config["GAMMA"] * q_next_target
+                )
+
+                def _loss_fn(params):
+                    q_vals = network.apply(
+                        params, learn_batch.first.obs
+                    )  # (batch_size, num_actions)
+                    chosen_action_qvals = jnp.take_along_axis(
+                        q_vals,
+                        jnp.expand_dims(learn_batch.first.action, axis=-1),
+                        axis=-1,
+                    ).squeeze(axis=-1)
+                    return jnp.mean((chosen_action_qvals - target) ** 2)
+
+                loss, grads = jax.value_and_grad(_loss_fn)(train_state.params)
+                train_state = train_state.apply_gradients(grads=grads)
+                train_state = train_state.replace(n_updates=train_state.n_updates + 1)
+                return train_state, loss
+
             rng, _rng = jax.random.split(rng)
             is_learn_time = (
                 (buffer.can_sample(buffer_state))
@@ -221,19 +255,9 @@ def make_train(config):
                     train_state.timesteps % config["TRAINING_INTERVAL"] == 0
                 )  # training interval
             )
-            
-            update_period = config["NUM_UPDATES"] // 10
-            plotDetails = train_state.timesteps % update_period == 0
-            
             train_state, loss = jax.lax.cond(
                 is_learn_time,
-                lambda train_state, rng: learn_phase(
-                    buffer.sample(buffer_state, rng).experience,
-                    network,
-                    train_state.params,
-                    train_state.target_network_params,
-                    config['GAMMA'],
-                    plotDetails),
+                lambda train_state, rng: _learn_phase(train_state, rng),
                 lambda train_state, rng: (train_state, jnp.array(0.0)),  # do nothing
                 train_state,
                 _rng,
@@ -257,9 +281,7 @@ def make_train(config):
                 "timesteps": train_state.timesteps,
                 "updates": train_state.n_updates,
                 "loss": loss.mean(),
-                "reward": info["reward"].mean(),
-                "q_values_mean": q_vals.mean(),
-                "q_values_max": q_vals.max(),
+                "returns": info["returned_episode_returns"].mean(),
             }
 
             # report on wandb if required
@@ -286,17 +308,19 @@ def make_train(config):
 
     return train
 
+
 def main():
+
     config = {
         "NUM_ENVS": 10,
         "BUFFER_SIZE": 10000,
-        "BUFFER_BATCH_SIZE": 32,
-        "TOTAL_TIMESTEPS": 5e4,
+        "BUFFER_BATCH_SIZE": 128,
+        "TOTAL_TIMESTEPS": 5e5,
         "EPSILON_START": 1.0,
         "EPSILON_FINISH": 0.05,
-        "EPSILON_ANNEAL_TIME": 250_000,
+        "EPSILON_ANNEAL_TIME": 25e4,
         "TARGET_UPDATE_INTERVAL": 500,
-        "LR": 1e-3,
+        "LR": 2.5e-4,
         "LEARNING_STARTS": 10000,
         "TRAINING_INTERVAL": 10,
         "LR_LINEAR_DECAY": False,
@@ -304,16 +328,16 @@ def main():
         "TAU": 1.0,
         "SEED": 0,
         "NUM_SEEDS": 1,
-        "WANDB_MODE": "online",
+        "WANDB_MODE": "online",  # set to online to activate wandb
         "ENTITY": "imsinha-harvard-university",
-        "PROJECT": "TwoStepTask",
+        "PROJECT": "HouseMaze",
     }
 
     wandb.init(
         entity=config["ENTITY"],
         project=config["PROJECT"],
-        tags=["DQN", "TWOSTEPTASK", f"jax_{jax.__version__}"],
-        name="purejaxrl_dqn_twosteptask",
+        tags=["DQN", "HOUSEMAZE", f"jax_{jax.__version__}"],
+        name='purejaxrl_dqn_housemaze',
         config=config,
         mode=config["WANDB_MODE"],
     )
@@ -322,6 +346,7 @@ def main():
     rngs = jax.random.split(rng, config["NUM_SEEDS"])
     train_vjit = jax.jit(jax.vmap(make_train(config)))
     outs = jax.block_until_ready(train_vjit(rngs))
+
 
 if __name__ == "__main__":
     main()

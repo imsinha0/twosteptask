@@ -1,0 +1,36 @@
+[31muser 1/1 |81046919 |stage 0/None| 2025-03-07 14:42:21,507 - main - INFO - Starting experiment
+[0m[31muser 1/1 |81046919 |stage 0/None| 2025-03-07 14:42:21,508 - main - INFO - ==============================
+[0m[31muser 1/1 |81046919 |stage 0/None| 2025-03-07 14:42:21,508 - main - INFO - Began stage 'Instructions'
+[0m[31muser 1/1 |81046919 |stage 0/None| 2025-03-07 14:42:23,043 - main - INFO - Finished Instructions via button press
+[0m[31muser 1/1 |81046919 |stage 0/None| 2025-03-07 14:42:23,044 - main - INFO - Finished stage 'Instructions'
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:23,044 - main - INFO - ==============================
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:23,045 - main - INFO - Began stage 'Environment'
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:23,045 - nicewebrl.stages - INFO - ==============================
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:23,045 - nicewebrl.stages - INFO - {'desc': 'some description', 'key1': 'value1', 'key2': 'value2'}
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:23,148 - nicewebrl.stages - INFO - Getting latest stage state
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:23,149 - nicewebrl.stages - INFO - No stage state found, starting new stage
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:24,141 - nicewebrl.stages - INFO - handle_key_press key: ArrowLeft
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:24,429 - nicewebrl.stages - INFO - Environment saved file
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:24,430 - nicewebrl.stages - INFO - ∆t: 0.916
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:24,430 - nicewebrl.stages - INFO - stage state: {'nsteps': 2, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:24,430 - nicewebrl.stages - INFO - env step: 2
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:24,849 - nicewebrl.stages - INFO - handle_key_press key: ArrowLeft
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:24,854 - nicewebrl.stages - INFO - --------------------
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:24,855 - nicewebrl.stages - INFO - episode over
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:24,855 - nicewebrl.stages - INFO - --------------------
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:24,856 - nicewebrl.stages - INFO - stage finished
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:24,860 - nicewebrl.stages - INFO - Environment saved file
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:24,861 - nicewebrl.stages - INFO - ∆t: 0.709
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:24,861 - nicewebrl.stages - INFO - stage state: {'nsteps': 3, 'nepisodes': 1, 'nsuccesses': 1}
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:24,862 - nicewebrl.stages - INFO - env step: 3
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:26,054 - nicewebrl.stages - INFO - handle_key_press key: ArrowLeft
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:26,055 - nicewebrl.stages - INFO - key press 'ArrowLeft' finishing stage
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:26,055 - nicewebrl.stages - INFO - finish_stage Environment. stats: {'nsteps': 3, 'nepisodes': 1, 'nsuccesses': 1}
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:26,060 - nicewebrl.stages - INFO - Environment saved file
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:26,061 - nicewebrl.stages - INFO - ∆t: 0.0
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:26,062 - nicewebrl.stages - INFO - stage state: {'nsteps': 3, 'nepisodes': 1, 'nsuccesses': 1}
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:26,062 - nicewebrl.stages - INFO - env step: 3
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:26,063 - main - INFO - Finished Environment via key press
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:26,064 - main - INFO - Finished stage 'Environment'
+[0m[31muser 1/1 |81046919 |stage 1/None| 2025-03-07 14:42:26,064 - main - INFO - Saved data for stage 'Environment'
+[0m

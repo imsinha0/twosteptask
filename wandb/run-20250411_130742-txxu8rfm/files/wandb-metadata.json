@@ -1,0 +1,42 @@
+{
+  "os":  "macOS-15.3.2-arm64-arm-64bit",
+  "python":  "CPython 3.10.16",
+  "startedAt":  "2025-04-11T17:07:42.403384Z",
+  "program":  "<python with no main file>",
+  "git":  {
+    "remote":  "https://github.com/imsinha0/twosteptask.git",
+    "commit":  "44eaddd51b4ba481112e11ab23f8b790abcc5b5c"
+  },
+  "email":  "ishaan.mohan.sinha@gmail.com",
+  "root":  "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask",
+  "host":  "dhcp-10-250-229-163.harvard.edu",
+  "executable":  "/Users/ishaan/miniconda3/envs/nicewebrl/bin/python",
+  "cpu_count":  8,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "494384795648",
+      "used":  "438451728384"
+    },
+    "/System/Volumes/Data":  {
+      "total":  "494384795648",
+      "used":  "438451728384"
+    }
+  },
+  "memory":  {
+    "total":  "17179869184"
+  },
+  "cpu":  {
+    "count":  8,
+    "countLogical":  8
+  },
+  "apple":  {
+    "name":  "Apple M1 Pro",
+    "ecpuCores":  2,
+    "pcpuCores":  6,
+    "gpuCores":  14,
+    "memoryGb":  16,
+    "swapTotalBytes":  "2147483648",
+    "ramTotalBytes":  "17179869184"
+  }
+}

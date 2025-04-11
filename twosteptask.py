@@ -3,6 +3,7 @@ import chex
 from flax import struct
 import jax
 import jax.numpy as jnp
+from jax import lax
 import gymnax
 from gymnax.environments import environment, spaces
 
@@ -25,8 +26,8 @@ class EnvParams:
     ])  # Shape: (3, 3, 3) - 3 states, each 3x3
     reward_probs: jnp.ndarray = jnp.array([
         [0.0, 1.0, 0.0], 
-        [0.3, 0.4, 0.3], 
-        [0.6, 0.3, 0.1],  
+        [0.0, 0.0, 1.0], 
+        [1.0, 0.0, 0.0],  
     ])  # Shape: (num_states, num_rewards)
     num_states: int = reward_probs.shape[0]
 
@@ -60,8 +61,11 @@ class TwoStepTask(environment.Environment):
         new_state = EnvState(step=step, state_idx=new_state_idx, reward=reward)
         done = step >= params.max_steps_in_episode
         info = {"discount": jax.lax.select(done, 0.0, 1.0),
-                "returned_episode_returns": reward * (1 - done)} 
-        return self.get_obs(new_state), new_state, reward, done, info
+                "reward": reward,
+                "state_idx": new_state_idx} 
+        
+        return lax.stop_gradient(self.get_obs(new_state)), lax.stop_gradient(new_state), reward, done, info
+    
 
     def reset(self, key: chex.PRNGKey, params: EnvParams) -> Tuple[chex.Array, EnvState]:
         state = EnvState(step=0, state_idx=0, reward=0.0)
@@ -69,7 +73,11 @@ class TwoStepTask(environment.Environment):
 
     def get_obs(self, state: EnvState) -> chex.Array:
         """Return observation from raw state."""
-        return jnp.array([state.step, state.state_idx, state.reward], dtype=jnp.float32)
+        return jnp.concatenate([
+            jnp.array([state.step], dtype=jnp.float32),
+            jax.nn.one_hot(state.state_idx, self.default_params.num_states),
+            jnp.array([state.reward], dtype=jnp.float32)
+            ], dtype=jnp.float32)
 
     def is_terminal(self, state: EnvState, params: EnvParams) -> jnp.ndarray:
         """Check whether state is terminal."""
@@ -92,14 +100,13 @@ class TwoStepTask(environment.Environment):
         return spaces.Discrete(2)
 
     def observation_space(self, params: EnvParams) -> spaces.Box:
-        """Observation space of the environment."""
-        low = jnp.array([0, 0, 0.0], dtype=jnp.float32)  # step, state_idx, reward
-        high = jnp.array([params.max_steps_in_episode, params.num_states - 1, 2.0], dtype=jnp.float32)
-        return spaces.Box(low, high, shape=(3,), dtype=jnp.float32)
+        low = jnp.array([0, 0, 0, 0, 0], dtype=jnp.float32)  # step, one-hot, reward
+        high = jnp.array([params.max_steps_in_episode, 1, 1, 1, 2.0], dtype=jnp.float32)
+        return spaces.Box(low, high, shape=(5,), dtype=jnp.float32)
     
     @property
     def observation_shape(self) -> tuple:
-        return (3,)
+        return (5,)
 
 def render(state: EnvState, params: EnvParams) -> jnp.ndarray:
     """Return an image-like representation of the current state."""

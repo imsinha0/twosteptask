@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/dqnNew.py", line 295, in <module>
+    main()
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/dqnNew.py", line 291, in main
+    train_vjit = jax.jit(jax.vmap(make_train(config)))
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/dqnNew.py", line 54, in make_train
+    env_params = env.default_params
+UnboundLocalError: local variable 'env' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/dqnNew.py", line 295, in <module>
+    main()
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/dqnNew.py", line 291, in main
+    train_vjit = jax.jit(jax.vmap(make_train(config)))
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/dqnNew.py", line 54, in make_train
+    env_params = env.default_params
+UnboundLocalError: local variable 'env' referenced before assignment

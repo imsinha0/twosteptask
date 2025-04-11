@@ -1,0 +1,13 @@
+/Users/ishaan/miniconda3/envs/nicewebrl/lib/python3.10/site-packages/flashbax/buffers/trajectory_buffer.py:473: UserWarning: Setting max_size dynamically sets the `max_length_time_axis` to be `max_size`//`add_batch_size = 1000`.This allows one to control exactly how many timesteps are stored in the buffer.Note that this overrides the `max_length_time_axis` argument.
+  warnings.warn(
+/Users/ishaan/miniconda3/envs/nicewebrl/lib/python3.10/site-packages/jax/_src/numpy/array_methods.py:121: UserWarning: Explicitly requested dtype <class 'jax.numpy.int64'> requested in astype is not available, and will be truncated to dtype int32. To enable more dtypes, set the jax_enable_x64 configuration option or the JAX_ENABLE_X64 shell environment variable. See https://github.com/jax-ml/jax#current-gotchas for more.
+  return lax_numpy.astype(self, dtype, copy=copy, device=device)
+
+Program interrupted. (Use 'cont' to resume).
+--Return--
+<jaxlib.xla_e...t 0x3115ada70>
+> [0;32m/Users/ishaan/miniconda3/envs/nicewebrl/lib/python3.10/site-packages/jax/_src/compiler.py[0m(309)[0;36mbackend_compile[0;34m()[0m
+[0;32m    308 [0;31m    [0;32mif[0m [0mhost_callbacks[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0m[0;32m--> 309 [0;31m      return backend.compile(
+[0m[0;32m    310 [0;31m          [0mbuilt_c[0m[0;34m,[0m [0mcompile_options[0m[0;34m=[0m[0moptions[0m[0;34m,[0m [0mhost_callbacks[0m[0;34m=[0m[0mhost_callbacks[0m[0;34m[0m[0;34m[0m[0m
+[0m

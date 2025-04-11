@@ -1,0 +1,23 @@
+2025-04-11 13:14:00,261 INFO    MainThread:68564 [wandb_setup.py:_flush():68] Current SDK version is 0.19.5
+2025-04-11 13:14:00,261 INFO    MainThread:68564 [wandb_setup.py:_flush():68] Configure stats pid to 68564
+2025-04-11 13:14:00,261 INFO    MainThread:68564 [wandb_setup.py:_flush():68] Loading settings from /Users/ishaan/.config/wandb/settings
+2025-04-11 13:14:00,261 INFO    MainThread:68564 [wandb_setup.py:_flush():68] Loading settings from /Users/ishaan/CS/Research/CarvalhoRL/twosteptask/wandb/settings
+2025-04-11 13:14:00,261 INFO    MainThread:68564 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-04-11 13:14:00,261 INFO    MainThread:68564 [wandb_init.py:setup_run_log_directory():637] Logging user logs to /Users/ishaan/CS/Research/CarvalhoRL/twosteptask/wandb/run-20250411_131400-xjsxqaub/logs/debug.log
+2025-04-11 13:14:00,261 INFO    MainThread:68564 [wandb_init.py:setup_run_log_directory():638] Logging internal logs to /Users/ishaan/CS/Research/CarvalhoRL/twosteptask/wandb/run-20250411_131400-xjsxqaub/logs/debug-internal.log
+2025-04-11 13:14:00,261 INFO    MainThread:68564 [wandb_init.py:init():756] calling init triggers
+2025-04-11 13:14:00,261 INFO    MainThread:68564 [wandb_init.py:init():761] wandb.init called with sweep_config: {}
+config: {'NUM_ENVS': 10, 'BUFFER_SIZE': 10000, 'BUFFER_BATCH_SIZE': 32, 'TOTAL_TIMESTEPS': 50000.0, 'EPSILON_START': 1.0, 'EPSILON_FINISH': 0.05, 'EPSILON_ANNEAL_TIME': 250000, 'TARGET_UPDATE_INTERVAL': 500, 'LR': 0.001, 'LEARNING_STARTS': 10000, 'TRAINING_INTERVAL': 10, 'LR_LINEAR_DECAY': False, 'GAMMA': 0.99, 'TAU': 1.0, 'SEED': 0, 'NUM_SEEDS': 1, 'WANDB_MODE': 'online', 'ENTITY': 'imsinha-harvard-university', 'PROJECT': 'TwoStepTask', '_wandb': {}}
+2025-04-11 13:14:00,261 INFO    MainThread:68564 [wandb_init.py:init():789] starting backend
+2025-04-11 13:14:00,486 INFO    MainThread:68564 [wandb_init.py:init():793] sending inform_init request
+2025-04-11 13:14:00,520 INFO    MainThread:68564 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2025-04-11 13:14:00,521 INFO    MainThread:68564 [wandb_init.py:init():808] backend started and connected
+2025-04-11 13:14:00,526 INFO    MainThread:68564 [wandb_init.py:init():901] updated telemetry
+2025-04-11 13:14:00,538 INFO    MainThread:68564 [wandb_init.py:init():926] communicating run to backend with 90.0 second timeout
+2025-04-11 13:14:00,950 INFO    MainThread:68564 [wandb_init.py:init():984] starting run threads in backend
+2025-04-11 13:14:01,044 INFO    MainThread:68564 [wandb_run.py:_console_start():2385] atexit reg
+2025-04-11 13:14:01,044 INFO    MainThread:68564 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2025-04-11 13:14:01,045 INFO    MainThread:68564 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2025-04-11 13:14:01,045 INFO    MainThread:68564 [wandb_run.py:_redirect():2325] Redirects installed.
+2025-04-11 13:14:01,046 INFO    MainThread:68564 [wandb_init.py:init():1026] run started, returning control to user process
+2025-04-11 13:14:03,501 WARNING MsgRouterThr:68564 [router.py:message_loop():75] message_loop has been closed

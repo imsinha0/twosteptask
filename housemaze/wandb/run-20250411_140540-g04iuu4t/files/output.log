@@ -1,0 +1,36 @@
+jax.errors.SimplifiedTraceback: For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/housemaze/dqn.py", line 351, in <module>
+    main()
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/housemaze/dqn.py", line 347, in main
+    outs = jax.block_until_ready(train_vjit(rngs))
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/housemaze/dqn.py", line 125, in train
+    init_obs, env_state = vmap_reset(config["NUM_ENVS"])(_rng)
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/housemaze/dqn.py", line 114, in <lambda>
+    vmap_reset = lambda n_envs: lambda rng: jax.vmap(env.reset, in_axes=(0, None))(
+  File "/Users/ishaan/miniconda3/envs/nicewebrl/lib/python3.10/site-packages/gymnax/wrappers/purerl.py", line 84, in reset
+    obs, env_state = self._env.reset(key, params)
+  File "/Users/ishaan/miniconda3/envs/nicewebrl/lib/python3.10/site-packages/gymnax/wrappers/purerl.py", line 48, in reset
+    obs, state = self._env.reset(key, params)
+TypeError: cannot unpack non-iterable TimeStep object
+jax.errors.SimplifiedTraceback: For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/housemaze/dqn.py", line 351, in <module>
+    main()
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/housemaze/dqn.py", line 347, in main
+    outs = jax.block_until_ready(train_vjit(rngs))
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/housemaze/dqn.py", line 125, in train
+    init_obs, env_state = vmap_reset(config["NUM_ENVS"])(_rng)
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/housemaze/dqn.py", line 114, in <lambda>
+    vmap_reset = lambda n_envs: lambda rng: jax.vmap(env.reset, in_axes=(0, None))(
+  File "/Users/ishaan/miniconda3/envs/nicewebrl/lib/python3.10/site-packages/gymnax/wrappers/purerl.py", line 84, in reset
+    obs, env_state = self._env.reset(key, params)
+  File "/Users/ishaan/miniconda3/envs/nicewebrl/lib/python3.10/site-packages/gymnax/wrappers/purerl.py", line 48, in reset
+    obs, state = self._env.reset(key, params)
+TypeError: cannot unpack non-iterable TimeStep object

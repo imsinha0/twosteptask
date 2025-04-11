@@ -1,0 +1,50 @@
+/Users/ishaan/miniconda3/envs/nicewebrl/lib/python3.10/site-packages/flashbax/buffers/trajectory_buffer.py:473: UserWarning: Setting max_size dynamically sets the `max_length_time_axis` to be `max_size`//`add_batch_size = 1000`.This allows one to control exactly how many timesteps are stored in the buffer.Note that this overrides the `max_length_time_axis` argument.
+  warnings.warn(
+/Users/ishaan/miniconda3/envs/nicewebrl/lib/python3.10/site-packages/jax/_src/numpy/array_methods.py:121: UserWarning: Explicitly requested dtype <class 'jax.numpy.int64'> requested in astype is not available, and will be truncated to dtype int32. To enable more dtypes, set the jax_enable_x64 configuration option or the JAX_ENABLE_X64 shell environment variable. See https://github.com/jax-ml/jax#current-gotchas for more.
+  return lax_numpy.astype(self, dtype, copy=copy, device=device)
+> [0;32m/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/dqn.py[0m(90)[0;36mlearn_phase[0;34m()[0m
+[0;32m     89 [0;31m[0;34m[0m[0m
+[0m[0;32m---> 90 [0;31m    [0melements[0m [0;34m=[0m [0mjax[0m[0;34m.[0m[0mtree_map[0m[0;34m([0m[0;32mlambda[0m [0mx[0m[0;34m:[0m [0mx[0m[0;34m,[0m [0mbatch[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[0;32m     91 [0;31m[0;34m[0m[0m
+[0m
+*** NameError: name 'element' is not defined
+*** NameError: name 'x' is not defined
+jax.errors.SimplifiedTraceback: For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ishaan/miniconda3/envs/nicewebrl/lib/python3.10/site-packages/ipdb/__main__.py", line 323, in main
+    pdb._runscript(mainpyfile)
+  File "/Users/ishaan/miniconda3/envs/nicewebrl/lib/python3.10/pdb.py", line 1583, in _runscript
+    self.run(statement)
+  File "/Users/ishaan/miniconda3/envs/nicewebrl/lib/python3.10/bdb.py", line 598, in run
+    exec(cmd, globals, locals)
+  File "<string>", line 1, in <module>
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/dqn.py", line 327, in <module>
+    main()
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/dqn.py", line 324, in main
+    outs = jax.block_until_ready(train_vjit(rngs))
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/dqn.py", line 282, in train
+    runner_state, metrics = jax.lax.scan(
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/dqn.py", line 228, in _update_step
+    train_state, loss = jax.lax.cond(
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/dqn.py", line 230, in <lambda>
+    lambda train_state, rng: learn_phase(
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/dqn.py", line 97, in learn_phase
+    loss, grads = jax.value_and_grad(_loss_fn)(train_state.params)
+UnboundLocalError: local variable 'train_state' referenced before assignment
+Uncaught exception. Entering post mortem debugging
+Running 'cont' or 'step' will restart the program
+> [0;32m/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/dqn.py[0m(97)[0;36mlearn_phase[0;34m()[0m
+[0;32m     96 [0;31m[0;34m[0m[0m
+[0m[0;32m---> 97 [0;31m    [0mloss[0m[0;34m,[0m [0mgrads[0m [0;34m=[0m [0mjax[0m[0;34m.[0m[0mvalue_and_grad[0m[0;34m([0m[0m_loss_fn[0m[0;34m)[0m[0;34m([0m[0mtrain_state[0m[0;34m.[0m[0mparams[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[0;32m     98 [0;31m    [0mtrain_state[0m [0;34m=[0m [0mtrain_state[0m[0;34m.[0m[0mapply_gradients[0m[0;34m([0m[0mgrads[0m[0;34m=[0m[0mgrads[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m
+*** SyntaxError: invalid syntax
+Post mortem debugger finished. The dqn.py will be restarted
+> [0;32m/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/dqn.py[0m(1)[0;36m<module>[0;34m()[0m
+[0;32m----> 1 [0;31m"""
+[0m[0;32m      2 [0;31m[0mPureJaxRL[0m [0mversion[0m [0mof[0m [0mCleanRL[0m[0;31m'[0m[0ms[0m [0mDQN[0m[0;34m:[0m [0mhttps[0m[0;34m:[0m[0;34m//[0m[0mgithub[0m[0;34m.[0m[0mcom[0m[0;34m/[0m[0mvwxyzjn[0m[0;34m/[0m[0mcleanrl[0m[0;34m/[0m[0mblob[0m[0;34m/[0m[0mmaster[0m[0;34m/[0m[0mcleanrl[0m[0;34m/[0m[0mdqn_jax[0m[0;34m.[0m[0mpy[0m[0;34m[0m[0;34m[0m[0m
+[0m[0;32m      3 [0;31m[0;34m[0m[0m
+[0m

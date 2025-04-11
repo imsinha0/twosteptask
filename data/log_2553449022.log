@@ -1,0 +1,206 @@
+[31muser 1/1 |2553449022 |stage 0/None| 2025-04-11 13:52:50,865 - main - INFO - Starting experiment
+[0m[31muser 1/1 |2553449022 |stage 0/None| 2025-04-11 13:52:50,865 - main - INFO - ==============================
+[0m[31muser 1/1 |2553449022 |stage 0/None| 2025-04-11 13:52:50,865 - main - INFO - Began stage 'Instructions'
+[0m[31muser 1/1 |2553449022 |stage 0/None| 2025-04-11 13:52:53,189 - main - INFO - Finished Instructions via button press
+[0m[31muser 1/1 |2553449022 |stage 0/None| 2025-04-11 13:52:53,190 - main - INFO - Finished stage 'Instructions'
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:53,191 - main - INFO - ==============================
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:53,192 - main - INFO - Began stage 'HouseMaze'
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:53,192 - nicewebrl.stages - INFO - ==============================
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:53,193 - nicewebrl.stages - INFO - {'desc': 'some description', 'key1': 'value1', 'key2': 'value2'}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:53,299 - nicewebrl.stages - INFO - Getting latest stage state
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:53,300 - nicewebrl.stages - INFO - No stage state found, starting new stage
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:54,371 - nicewebrl.stages - INFO - handle_key_press key: ArrowRight
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:54,858 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:54,860 - nicewebrl.stages - INFO - ∆t: 0.95
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:54,860 - nicewebrl.stages - INFO - stage state: {'nsteps': 2, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:54,860 - nicewebrl.stages - INFO - env step: 2
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:55,098 - nicewebrl.stages - INFO - handle_key_press key: ArrowUp
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:55,129 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:55,129 - nicewebrl.stages - INFO - ∆t: 0.726
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:55,130 - nicewebrl.stages - INFO - stage state: {'nsteps': 3, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:55,130 - nicewebrl.stages - INFO - env step: 3
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:55,611 - nicewebrl.stages - INFO - handle_key_press key: ArrowUp
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:55,642 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:55,642 - nicewebrl.stages - INFO - ∆t: 0.513
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:55,642 - nicewebrl.stages - INFO - stage state: {'nsteps': 4, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:55,642 - nicewebrl.stages - INFO - env step: 4
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:55,896 - nicewebrl.stages - INFO - handle_key_press key: ArrowRight
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:55,922 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:55,923 - nicewebrl.stages - INFO - ∆t: 0.287
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:55,923 - nicewebrl.stages - INFO - stage state: {'nsteps': 5, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:55,923 - nicewebrl.stages - INFO - env step: 5
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:56,149 - nicewebrl.stages - INFO - handle_key_press key: ArrowRight
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:56,181 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:56,181 - nicewebrl.stages - INFO - ∆t: 0.248
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:56,181 - nicewebrl.stages - INFO - stage state: {'nsteps': 6, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:56,182 - nicewebrl.stages - INFO - env step: 6
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:56,337 - nicewebrl.stages - INFO - handle_key_press key: ArrowRight
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:56,359 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:56,359 - nicewebrl.stages - INFO - ∆t: 0.191
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:56,360 - nicewebrl.stages - INFO - stage state: {'nsteps': 7, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:56,360 - nicewebrl.stages - INFO - env step: 7
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:56,534 - nicewebrl.stages - INFO - handle_key_press key: ArrowRight
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:56,563 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:56,563 - nicewebrl.stages - INFO - ∆t: 0.197
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:56,564 - nicewebrl.stages - INFO - stage state: {'nsteps': 8, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:56,564 - nicewebrl.stages - INFO - env step: 8
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:56,780 - nicewebrl.stages - INFO - handle_key_press key: ArrowDown
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:56,812 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:56,812 - nicewebrl.stages - INFO - ∆t: 0.248
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:56,813 - nicewebrl.stages - INFO - stage state: {'nsteps': 9, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:56,813 - nicewebrl.stages - INFO - env step: 9
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:57,017 - nicewebrl.stages - INFO - handle_key_press key: ArrowDown
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:57,043 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:57,043 - nicewebrl.stages - INFO - ∆t: 0.235
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:57,044 - nicewebrl.stages - INFO - stage state: {'nsteps': 10, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:57,044 - nicewebrl.stages - INFO - env step: 10
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:57,193 - nicewebrl.stages - INFO - handle_key_press key: ArrowDown
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:57,217 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:57,218 - nicewebrl.stages - INFO - ∆t: 0.177
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:57,219 - nicewebrl.stages - INFO - stage state: {'nsteps': 11, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:57,219 - nicewebrl.stages - INFO - env step: 11
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:57,534 - nicewebrl.stages - INFO - handle_key_press key: ArrowLeft
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:57,562 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:57,562 - nicewebrl.stages - INFO - ∆t: 0.341
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:57,562 - nicewebrl.stages - INFO - stage state: {'nsteps': 12, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:57,562 - nicewebrl.stages - INFO - env step: 12
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:57,770 - nicewebrl.stages - INFO - handle_key_press key: ArrowDown
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:57,794 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:57,794 - nicewebrl.stages - INFO - ∆t: 0.235
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:57,795 - nicewebrl.stages - INFO - stage state: {'nsteps': 13, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:57,795 - nicewebrl.stages - INFO - env step: 13
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,051 - nicewebrl.stages - INFO - handle_key_press key: ArrowLeft
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,080 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,080 - nicewebrl.stages - INFO - ∆t: 0.281
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,081 - nicewebrl.stages - INFO - stage state: {'nsteps': 14, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,081 - nicewebrl.stages - INFO - env step: 14
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,236 - nicewebrl.stages - INFO - handle_key_press key: ArrowLeft
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,254 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,255 - nicewebrl.stages - INFO - ∆t: 0.186
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,255 - nicewebrl.stages - INFO - stage state: {'nsteps': 15, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,255 - nicewebrl.stages - INFO - env step: 15
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,396 - nicewebrl.stages - INFO - handle_key_press key: ArrowLeft
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,421 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,421 - nicewebrl.stages - INFO - ∆t: 0.159
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,422 - nicewebrl.stages - INFO - stage state: {'nsteps': 16, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,422 - nicewebrl.stages - INFO - env step: 16
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,550 - nicewebrl.stages - INFO - handle_key_press key: ArrowLeft
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,576 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,577 - nicewebrl.stages - INFO - ∆t: 0.156
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,577 - nicewebrl.stages - INFO - stage state: {'nsteps': 17, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,577 - nicewebrl.stages - INFO - env step: 17
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,714 - nicewebrl.stages - INFO - handle_key_press key: ArrowLeft
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,736 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,737 - nicewebrl.stages - INFO - ∆t: 0.163
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,737 - nicewebrl.stages - INFO - stage state: {'nsteps': 18, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,737 - nicewebrl.stages - INFO - env step: 18
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,914 - nicewebrl.stages - INFO - handle_key_press key: ArrowDown
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,933 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,934 - nicewebrl.stages - INFO - ∆t: 0.2
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,934 - nicewebrl.stages - INFO - stage state: {'nsteps': 19, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:58,934 - nicewebrl.stages - INFO - env step: 19
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:59,080 - nicewebrl.stages - INFO - handle_key_press key: ArrowLeft
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:59,108 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:59,109 - nicewebrl.stages - INFO - ∆t: 0.165
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:59,109 - nicewebrl.stages - INFO - stage state: {'nsteps': 20, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:59,109 - nicewebrl.stages - INFO - env step: 20
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:59,269 - nicewebrl.stages - INFO - handle_key_press key: ArrowLeft
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:59,296 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:59,297 - nicewebrl.stages - INFO - ∆t: 0.19
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:59,297 - nicewebrl.stages - INFO - stage state: {'nsteps': 21, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:59,297 - nicewebrl.stages - INFO - env step: 21
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:59,462 - nicewebrl.stages - INFO - handle_key_press key: ArrowDown
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:59,492 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:59,492 - nicewebrl.stages - INFO - ∆t: 0.193
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:59,493 - nicewebrl.stages - INFO - stage state: {'nsteps': 22, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:59,493 - nicewebrl.stages - INFO - env step: 22
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:59,871 - nicewebrl.stages - INFO - handle_key_press key: ArrowLeft
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:59,903 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:59,903 - nicewebrl.stages - INFO - ∆t: 0.409
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:59,903 - nicewebrl.stages - INFO - stage state: {'nsteps': 23, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:52:59,904 - nicewebrl.stages - INFO - env step: 23
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,049 - nicewebrl.stages - INFO - handle_key_press key: ArrowLeft
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,075 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,075 - nicewebrl.stages - INFO - ∆t: 0.179
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,075 - nicewebrl.stages - INFO - stage state: {'nsteps': 24, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,076 - nicewebrl.stages - INFO - env step: 24
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,196 - nicewebrl.stages - INFO - handle_key_press key: ArrowLeft
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,220 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,220 - nicewebrl.stages - INFO - ∆t: 0.146
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,221 - nicewebrl.stages - INFO - stage state: {'nsteps': 25, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,221 - nicewebrl.stages - INFO - env step: 25
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,349 - nicewebrl.stages - INFO - handle_key_press key: ArrowLeft
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,375 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,375 - nicewebrl.stages - INFO - ∆t: 0.152
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,375 - nicewebrl.stages - INFO - stage state: {'nsteps': 26, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,376 - nicewebrl.stages - INFO - env step: 26
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,519 - nicewebrl.stages - INFO - handle_key_press key: ArrowLeft
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,547 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,547 - nicewebrl.stages - INFO - ∆t: 0.171
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,548 - nicewebrl.stages - INFO - stage state: {'nsteps': 27, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,548 - nicewebrl.stages - INFO - env step: 27
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,692 - nicewebrl.stages - INFO - handle_key_press key: ArrowDown
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,719 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,719 - nicewebrl.stages - INFO - ∆t: 0.174
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,720 - nicewebrl.stages - INFO - stage state: {'nsteps': 28, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,720 - nicewebrl.stages - INFO - env step: 28
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,867 - nicewebrl.stages - INFO - handle_key_press key: ArrowDown
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,897 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,897 - nicewebrl.stages - INFO - ∆t: 0.173
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,898 - nicewebrl.stages - INFO - stage state: {'nsteps': 29, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:00,898 - nicewebrl.stages - INFO - env step: 29
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,077 - nicewebrl.stages - INFO - handle_key_press key: ArrowRight
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,094 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,094 - nicewebrl.stages - INFO - ∆t: 0.213
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,094 - nicewebrl.stages - INFO - stage state: {'nsteps': 30, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,095 - nicewebrl.stages - INFO - env step: 30
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,267 - nicewebrl.stages - INFO - handle_key_press key: ArrowRight
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,284 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,284 - nicewebrl.stages - INFO - ∆t: 0.189
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,285 - nicewebrl.stages - INFO - stage state: {'nsteps': 31, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,285 - nicewebrl.stages - INFO - env step: 31
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,429 - nicewebrl.stages - INFO - handle_key_press key: ArrowRight
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,458 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,458 - nicewebrl.stages - INFO - ∆t: 0.159
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,459 - nicewebrl.stages - INFO - stage state: {'nsteps': 32, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,459 - nicewebrl.stages - INFO - env step: 32
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,579 - nicewebrl.stages - INFO - handle_key_press key: ArrowRight
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,604 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,604 - nicewebrl.stages - INFO - ∆t: 0.152
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,605 - nicewebrl.stages - INFO - stage state: {'nsteps': 33, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,605 - nicewebrl.stages - INFO - env step: 33
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,734 - nicewebrl.stages - INFO - handle_key_press key: ArrowRight
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,760 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,761 - nicewebrl.stages - INFO - ∆t: 0.155
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,761 - nicewebrl.stages - INFO - stage state: {'nsteps': 34, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,761 - nicewebrl.stages - INFO - env step: 34
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,886 - nicewebrl.stages - INFO - handle_key_press key: ArrowRight
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,914 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,914 - nicewebrl.stages - INFO - ∆t: 0.152
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,915 - nicewebrl.stages - INFO - stage state: {'nsteps': 35, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:01,915 - nicewebrl.stages - INFO - env step: 35
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,055 - nicewebrl.stages - INFO - handle_key_press key: ArrowRight
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,084 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,084 - nicewebrl.stages - INFO - ∆t: 0.169
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,084 - nicewebrl.stages - INFO - stage state: {'nsteps': 36, 'nepisodes': 1, 'nsuccesses': 0}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,085 - nicewebrl.stages - INFO - env step: 36
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,202 - nicewebrl.stages - INFO - handle_key_press key: ArrowRight
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,227 - nicewebrl.stages - INFO - --------------------
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,228 - nicewebrl.stages - INFO - episode over
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,228 - nicewebrl.stages - INFO - --------------------
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,228 - nicewebrl.stages - INFO - stage finished
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,231 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,231 - nicewebrl.stages - INFO - ∆t: 0.148
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,231 - nicewebrl.stages - INFO - stage state: {'nsteps': 37, 'nepisodes': 1, 'nsuccesses': 1}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,231 - nicewebrl.stages - INFO - env step: 37
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,361 - nicewebrl.stages - INFO - handle_key_press key: ArrowRight
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,361 - nicewebrl.stages - INFO - key press 'ArrowRight' finishing stage
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,362 - nicewebrl.stages - INFO - finish_stage HouseMaze. stats: {'nsteps': 37, 'nepisodes': 1, 'nsuccesses': 1}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,370 - nicewebrl.stages - INFO - HouseMaze saved file
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,371 - nicewebrl.stages - INFO - ∆t: 0.0
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,371 - nicewebrl.stages - INFO - stage state: {'nsteps': 37, 'nepisodes': 1, 'nsuccesses': 1}
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,371 - nicewebrl.stages - INFO - env step: 37
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,371 - main - INFO - Finished HouseMaze via key press
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,372 - main - INFO - Finished stage 'HouseMaze'
+[0m[31muser 1/1 |2553449022 |stage 1/None| 2025-04-11 13:53:02,372 - main - INFO - Saved data for stage 'HouseMaze'
+[0m

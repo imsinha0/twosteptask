@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/housemaze/dqn.py", line 294, in <module>
+    main()
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/housemaze/dqn.py", line 289, in main
+    train_vjit = jax.jit(jax.vmap(make_train(config)))
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/housemaze/dqn.py", line 51, in make_train
+    basic_env = housemaze.HouseMaze()
+TypeError: HouseMaze.__init__() missing 1 required positional argument: 'task_runner'
+Traceback (most recent call last):
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/housemaze/dqn.py", line 294, in <module>
+    main()
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/housemaze/dqn.py", line 289, in main
+    train_vjit = jax.jit(jax.vmap(make_train(config)))
+  File "/Users/ishaan/CS/Research/CarvalhoRL/twosteptask/housemaze/dqn.py", line 51, in make_train
+    basic_env = housemaze.HouseMaze()
+TypeError: HouseMaze.__init__() missing 1 required positional argument: 'task_runner'
